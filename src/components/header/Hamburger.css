@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Poppins:wght@100;300;400&family=Prompt:wght@100&display=swap');
+.nav-hamber-menu{
+    z-index: 99;
+    display:none;
+    cursor: pointer;
+    margin-right:1rem;
+}
+
+.line-one,.line-two,.line-three{
+  
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+  }
+   .change.line-one  {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change.line-two{
+    opacity: 0;
+}
+  
+  .change.line-three  {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .black-plate{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(4, 4, 4, 0.422);
+    left: 1px;
+    top: 71px;
+  }
+  /* .hambur-slide.chang{
+    display: block;
+    right: 0px;
+    
+} */
+  .hambur-slide{
+    
+    width: 50%;
+    height: 100vh;
+    right: 0px;
+    top: 70px;
+    position: absolute;
+    background-color: rgb(42, 153, 14);
+    transition: 0.1s;
+    z-index: 999;
+    padding: 12px;
+}
+
+.list-menu{
+    margin-top:50px;
+    text-align: end;
+    list-style-type: none;
+}
+.list-menu li {
+  font-size: 1.5rem;
+    margin: 12px 0;
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.3s;
+}
+li a:hover{
+  border-bottom: 2px solid white;
+}
+.hambur-slide-icon{
+  width: 100%;
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap:24px;
+}
+.ham-icon-facebook{
+  width:35px;
+  height:100%;
+  transition:0.2s;
+}
+.ham-icon-line{
+  width:35px;
+  height:100%;
+  filter: brightness(0) invert(1);
+    transition:0.2s;
+
+}
+a:hover .ham-icon-facebook{
+  transform: scale(1.5);
+
+}
+a:hover .ham-icon-line{
+  transform: scale(1.5);
+}
+.icon-twitter{
+  width: 20px;
+}
+  @media screen and (max-width:900px) {
+    .nav-hamber-menu{
+      
+        display:block;
+        z-index: 99;
+    }
+}

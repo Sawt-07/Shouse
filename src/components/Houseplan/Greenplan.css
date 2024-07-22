@@ -1,0 +1,143 @@
+.greenplan-wrap{
+    width:100%;
+    
+    background-color:#026701 ;
+    padding:15px 15px;
+}
+.greenplan-container{
+    width: 100%;
+    /* height: 100%; */
+    max-width: 1740px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    gap: 63px;
+
+}
+.grenplan-close-btn{
+    width:100%;
+    max-width: 1710px;
+    height: 50px;
+    position:fixed;
+    top: 1rem;
+    z-index: 9999;
+}
+.img-planhouse{
+    width: 50%;
+    /* height: 489px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.img-planhouse img{
+    width:100%;
+    /* height:100%; */
+    object-fit: cover;
+}
+.greenplan-text{
+    width:50%;
+    
+}
+.green-title{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+.green-title1 {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+.text1{
+    color: rgb(255, 255, 255);
+    font-size:20px;
+}
+ul li{
+    color: #ffffff;
+    margin-left:36px;
+    font-size: 1rem;
+}
+.detall-btn{
+    width:90px;
+    height:38px;
+    margin-top:30px;
+    border: 1px solid rgb(237, 238, 239);
+    border-radius:2px;
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    transition:0.3s;
+  }
+  .detall-btn:hover{
+    color:#ffffff;
+      background-color: rgb(2, 161, 18);
+  }
+  @media screen and (max-width:1270px) {
+      .green-title{
+        font-size:28px;
+      }
+      .green-title1{
+        font-size: 18px;
+      }
+      .text1{
+        font-size: 18px;
+      }
+      .grenplan-close-btn{
+        width:95%;
+        
+    }
+  }
+
+  @media screen and (max-width:900px) {
+  .greenplan-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  } 
+  .grenplan-close-btn{
+    width:95%;
+    
+}
+  .img-planhouse{
+    width:100%;
+  }
+  .greenplan-text{
+    width:100%;
+    padding-left:15px;
+  }
+} 
+@media screen and (max-width:500px) {
+  
+  .popup-title{
+      font-size:24px;
+  }
+  .popup-des p{
+      font-size:16px;
+  }
+  .popup-des-list li{
+      font-size:16px;
+  }
+  .popup-text-1 p {
+      font-size:16px;
+  }
+  .popup-text-list li{
+      font-size:16px;
+  }
+  .popup-text-2{
+      font-size:16px;
+  }
+  .popup-text-2 p{
+      font-size:19px;
+  }
+  .contact-social li{
+      font-size: 12px;
+  }
+  .grenplan-close-btn{
+    width:95%;
+    
+}
+
+}

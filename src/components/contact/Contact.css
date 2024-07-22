@@ -1,0 +1,188 @@
+.contact-container{
+    width: 100%;
+    max-width:1740px;
+   margin:0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap:30px;
+}
+.contact-text{
+    width:100%;
+}
+.contact-text-title{
+    font-size: 50px;
+    font-family: 'Kanit'sans-serif;
+font-weight: 500;
+margin-left: 60px;
+}
+.contact{
+    width:100%;
+    display: flex;
+    align-items: baseline;
+    gap:30px;
+}
+
+.contact-form{
+    width: 50%;
+    margin-left: 60px;
+}
+.contact-map{
+    width:50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+.text-map{
+    font-size: 30px;
+    font-family: 'Kanit'sans-serif;
+    font-weight: 500;
+}
+.map{
+    width:100%;
+    height: 280px;
+    border: 1px solid white;
+}
+.contact-media-container{
+    width:100%;
+   padding: 30px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contact-media-socie{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.contact-media-socie li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000;
+    gap:12px;
+}
+.contact-adress{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:12px;
+}
+/* .ct-ad-logo{
+    width:30%;
+} */
+.cntact-adres-text{
+    font-size: 16px;
+    font-family: 'Kanit'sans-serif;
+    font-weight: 600; 
+    line-height:24px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    
+}
+.cntact-adres-list1 {
+  width:100%;  
+  display: flex;
+  align-items: center;
+}
+.cntact-adres-list1 li{
+    color: #000;
+    font-size: 14px;
+font-family: 'Kanit'sans-serif;
+font-weight: 400;
+}
+.cntact-adres-list2 {
+    width:100%;  
+    display: flex;
+    align-items: center;
+  }
+  .cntact-adres-list2 li{
+      color: #000;
+      font-size: 14px;
+      font-family: 'Kanit'sans-serif;
+  font-weight: 400;
+  }
+
+  @media screen and (max-width:900px) {
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-text-title{
+       
+        font-size: 35px;
+        margin-left:0;
+    }
+
+    .contact-form{
+        width: 100%;
+        margin-left:0;
+    }
+    .contact-map{
+        width:100%;
+    }
+    .contact-media-container{
+        flex-direction:column-reverse;
+        gap: 16px;
+        padding:1;
+    }
+    .contact-media-socie{
+        width:100%;
+    }
+    .contact-adress{
+        width:100%;
+    }
+    .contact-media-socie li{
+        margin-left:0;
+    }
+    .cntact-adres-text{
+        width:100%;
+    }
+   
+    .cntact-adres-list1 li{
+        width:100%;
+        font-size: 12px;
+        margin-left: 12px;
+    
+        
+    }
+    .cntact-adres-list2 li{
+        width:100%;
+        font-size: 12px;
+        margin-left: 12px;
+    }
+}
+@media screen and (max-width:500px) {
+    .contact-text{
+        width:100%;
+    }
+    .cntact-adres-text{
+    line-height:26px;
+    }
+    .contact-text-title{
+       
+        font-size: 45px;
+        line-height: 40px;
+        margin-left:10px;
+    }
+    .cntact-adres-list1,.cntact-adres-list2{
+        display: grid;
+        font-size: 16px;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .contact-media-socie li {
+        align-items: start;
+    }
+
+
+
+}
